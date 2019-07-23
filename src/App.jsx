@@ -2,10 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import PropTypes from 'prop-types';
 import { AddressFmt, Translate } from 'react-ilib';
-//xeslint-disable-next-line
-import Address from 'ilib-es6/lib/Address';
+import { Address } from 'ilib-es6';
 
 var addresses = {
  US: new Address({
@@ -37,7 +35,7 @@ var addresses = {
 function App() {
     let addressesFormatted = [];
     for (let a in addresses) {
-        addressesFormatted.push(<li>{a}: <AddressFmt locale={addresses[a].locale} address={addresses[a]}/></li>);
+        addressesFormatted.push(<li key={addresses[a].locale}>{a}: <AddressFmt locale={addresses[a].locale} address={addresses[a]}/></li>);
     }
 
     return (
