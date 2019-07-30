@@ -8,7 +8,7 @@ import { LocaleDataProvider } from 'react-ilib';
 
 ReactDOM.render(
     <LocaleDataProvider
-        locale="en-US"
+        locale="de-DE"
         translationsDir={path.join(__dirname, "res")}
         bundleName="resources"
         app={App}

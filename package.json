@@ -1,17 +1,25 @@
 {
   "name": "react-ilib-demo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
+    "ilib-es6": "file:../ilib-es6/ilib-es6-14.3.0.tgz",
+    "ilib-react-scripts": "file:../create-react-app/packages/react-scripts/ilib-react-scripts-3.0.1.tgz",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-ilib": "file:../react-ilib/react-ilib-0.0.5.tgz",
-    "react-scripts": "3.0.1"
+    "react-ilib": "file:../react-ilib/react-ilib-0.2.0.tgz"
+  },
+  "devDependencies": {
+    "ilib-loctool-javascript": "^1.0.0",
+    "ilib-loctool-jsx": "^1.0.0",
+    "loctool": "^2.2.0",
+    "webpack-cli": "^3.3.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "loc": "loctool"
   },
   "eslintConfig": {
     "extends": "react-app"

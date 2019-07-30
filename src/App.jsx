@@ -1,8 +1,28 @@
+/*
+ * App.jsx - main application logic for the react-ilib demo application
+ *
+ * Copyright © 2019, JEDLSoft
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { AddressFmt, Translate } from 'react-ilib';
+import { AddressFmt, Translate, DateFmt } from 'react-ilib';
 import { Address } from 'ilib-es6';
 
 var addresses = {
@@ -46,7 +66,7 @@ function App() {
             </header>
             <p className="App-intro">
                 <Translate id="test.id" description="this is a test">
-                    This app <i>tests</i> the <b>components</b> in react-ilib at this date/time: <p/><AddressFmt locale="en-US" address={addresses.US}/>.
+                    This app <i>tests</i> the <b>components</b> in react-ilib at this date/time: <DateFmt type="datetime" length="long" date={new Date()}/><p/>
                 </Translate>
             </p>
             <div className="App-body">
@@ -56,7 +76,9 @@ function App() {
                 </p>
                 <p>
                     <Translate comment="translator's comment">This is an address in the US formatted using AddressFmt:</Translate>
-                    <AddressFmt locale="en-US" address={addresses.US}/>
+                </p>
+                <p>
+                    <AddressFmt address={addresses.US}/>
                 </p>
             </div>
         </div>
