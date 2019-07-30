@@ -1,0 +1,82 @@
+{
+    "name": "react-ilib demo site",
+    "id": "react-ilib-demo",
+    "pseudoLocale": "ps-DO",
+    "resourceDirs": {
+        "js": "src/res",
+        "jsx": "src/res"
+    },
+    "excludes": [
+		"assets",
+        ".git",
+        "**/node_modules",
+        "node_modules",
+		"locales",
+        "bin",
+        "public",
+        "scripts",
+        "static",
+        "build",
+        "config",
+        "**/test"
+    ],
+    "settings": {
+        "locales": [
+            "de-DE",
+            "en-CA",
+            "en-GB",
+            "en-US",
+            "es-419",
+            "es-ES",
+            "fr-CA",
+            "fr-FR",
+			"it-IT",
+			"ja-JP",
+			"ko-KR",
+			"pt-BR",
+            "zh-Hans-CN",
+            "zh-Hant-HK"
+        ],
+        "localeDefaults": {
+            "en": {
+                "def": "en-US",
+                "spec": "en"
+            },
+            "es": {
+                "def": "es-419",
+                "spec": "es"
+            },
+            "de": {
+                "def": "de-DE",
+                "spec": "de"
+            },
+			"fr": {
+				"def": "fr-FR",
+				"spec": "fr"
+			},
+			"it": {
+				"def": "it-IT",
+				"spec": "it"
+			},
+			"pt": {
+				"def": "pt-BR",
+				"spec": "pt"
+			},
+            "zh-Hans": {
+                "def": "zh-Hans-CN",
+                "spec": "zh"
+            },
+            "zh-Hant": {
+                "def": "zh-Hant-HK",
+                "spec": "zh-Hant"
+            }
+        },
+        "JavaScriptResourceFile": {
+            "prefix": "/* eslint quote-props: [\"error\", \"always\"]*/\n"
+        }
+    },
+    "plugins": [
+        "ilib-loctool-jsx",
+        "ilib-loctool-javascript"
+    ]
+}
