@@ -66,20 +66,20 @@ function App() {
             </header>
             <p className="App-intro">
                 <Translate id="test.id" description="this is a test">
-                    This app <i>tests</i> the <b>components</b> in react-ilib at this date/time: <DateFmt type="datetime" length="long" date={new Date()}/><p/>
+                    This app <i>tests</i> the <b>components</b> in react-ilib at this date/time: <DateFmt type="datetime" length="long" date={new Date()}/>
                 </Translate>
             </p>
             <div className="App-body">
-                <p>
+                <div>
                         <h1><Translate>Addresses</Translate></h1>
                         <ul>{addressesFormatted}</ul>
-                </p>
-                <p>
+                </div>
+                <div>
                     <Translate comment="translator's comment">This is an address in the US formatted using AddressFmt:</Translate>
-                </p>
-                <p>
+                </div>
+                <div>
                     <AddressFmt address={addresses.US}/>
-                </p>
+                </div>
             </div>
         </div>
     );
